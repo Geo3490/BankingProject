@@ -19,7 +19,7 @@ public class Account {
 
     void deposit(int amount){
     balance = balance + amount;
-
+    previousTransaction = balance;
     }
 
     void withdraw(int amount){
@@ -28,9 +28,20 @@ public class Account {
     }
 
     void getPreviousTransaction(){
-
+        if(previousTransaction > 0){
+            System.out.println("Deposited " + previousTransaction);
+        }else if (previousTransaction < 0) {
+            System.out.println("Withdrawn " + Math.abs(previousTransaction));
+        }else{
+                System.out.println("No Transactions Occurred");
+            }
+        }
+    void calculateInterest(int years){
+        double interestPercentage = 0.185;
+        double newBalance = (balance * interestPercentage * years) + balance;
+        System.out.println("The current Interest rate Is " + (100 * interestPercentage) + "%");
+        System.out.println("After " + years + "Your Balance Will Be " + newBalance);
     }
-
     void showMenu(){
         Scanner scanner = new Scanner(System.in);
 
