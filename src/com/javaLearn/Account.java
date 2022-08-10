@@ -1,5 +1,7 @@
 package com.javaLearn;
 
+import java.util.Scanner;
+
 public class Account {
     int balance;
     int previousTransaction;
@@ -10,22 +12,27 @@ public class Account {
 
     void Account(String cName, String cId){
 
-        customerName = cName;
-        customerId = cId;
+        this.customerName = cName;
+        this.customerId = cId;
 
     }
 
     void deposit(int amount){
+    balance = balance + amount;
 
     }
 
     void withdraw(int amount){
-
+    balance = balance -amount;
+    previousTransaction = -balance;
     }
 
     void getPreviousTransaction(){
 
     }
 
+    void showMenu(){
+        Scanner scanner = new Scanner(System.in);
 
+    }
 }
