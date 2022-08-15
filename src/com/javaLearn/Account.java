@@ -51,7 +51,8 @@ public class Account{
         System.out.println("*********");
         System.out.println();
         System.out.println("What would you like to do ? ");
-        System.out.println("*********");
+        System.out.println("*".repeat(15));
+        System.out.println();
         System.out.println();
         System.out.println("A. Check Your Balance !");
         System.out.println("B. Make a deposit !");
@@ -59,6 +60,7 @@ public class Account{
         System.out.println("D. View previous transaction !");
         System.out.println("E. Calculate Interest !");
         System.out.println("F. EXIT");
+
 
         do {
             System.out.println();
@@ -70,9 +72,8 @@ public class Account{
             switch (option) {
                 //Case A allows user to check balance
                 case 'A':
-                    System.out.println("*********************");
-                    System.out.println("Balance = $ " + balance);
-                    System.out.println("*********************");
+
+                    System.out.println("*".repeat(15) + "\n" + "Balance = $ " + balance + "\n"+ "*".repeat(15));
                     System.out.println();
                     break;
 
@@ -96,26 +97,23 @@ public class Account{
 
                 //User User get previous transaction
                 case 'D':
-                    System.out.println("******************");
+                    System.out.println("*".repeat(15));
                     getPreviousTransaction();
-                    System.out.println("******************");
-                    System.out.println();
+                    System.out.println("*".repeat(15));
+
 
                     break;
 
                 //User accrued interest with balance calculation
                 case 'E':
-                    System.out.println();
-
-
+                   int years = scanner.nextInt();
+                   calculateInterest(years);
                     break;
 
 
-//                case 'F':
-//
-//
-//
-//                    break;
+                case 'F':
+                    System.out.println("*".repeat(15));
+                    break;
 
                 default:
                     System.out.println("ERROR Please Enter A,B,C,D,E,F !!!!!");
@@ -127,4 +125,5 @@ public class Account{
 
             System.out.println("Thank You For Banking With Us");
     }
+
 }
