@@ -9,8 +9,8 @@ public class Account{
     String customerId;
 
     void Account(String cName, String cId) {
-        this.customerName = cName;
-        this.customerId = cId;
+        customerName = cName;
+        customerId = cId;
     }
 
     void deposit(int amount) {
@@ -104,14 +104,15 @@ public class Account{
                     break;
 
                 //User accrued interest with balance calculation
-//                case 'E':
-//
-//
-//                    break;
-//
-//                //User EXIT
+                case 'E':
+                    System.out.println();
+
+
+                    break;
+
+
 //                case 'F':
-//                    int amount = scanner.nextInt();
+//
 //
 //
 //                    break;
