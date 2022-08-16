@@ -3,12 +3,13 @@ package com.javaLearn;
 import java.util.Scanner;
 
 public class Account{
+
     int balance;
     int previousTransaction;
     String customerName;
     String customerId;
 
-    void Account(String cName, String cId) {
+      Account(String cName, String cId) {
         customerName = cName;
         customerId = cId;
     }
@@ -68,6 +69,7 @@ public class Account{
             char option1 = scanner.nextLine().charAt(0);
             option = Character.toUpperCase(option1);
             System.out.println();
+
 
             switch (option) {
                 //Case A allows user to check balance
