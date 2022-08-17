@@ -1,12 +1,14 @@
 package com.javaLearn;
 
-public class GeoBank {
+public class Main {
 
     public static void main(String[] args) {
 
         Account george = new Account("George", "A00001");
-        
-       george.showMenu();
+        Account andrew = new Account("Andrew", "A00002");
+
+
+        george.showMenu();
 
     }
 }
