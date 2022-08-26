@@ -79,14 +79,14 @@ public class Account{
                     System.out.println();
                     break;
 
-                //User making a deposit
-                case 'B':
-                    System.out.println("Enter Amount To Deposit ");
-                    int amount = scanner.nextInt();
-                    deposit(amount);
-                    System.out.println();
+                        //User making a deposit
+                        case 'B':
+                            System.out.println("Enter Amount To Deposit ");
+                            int amount = scanner.nextInt();
+                            deposit(amount);
+                            System.out.println();
 
-                    break;
+                            break;
 
                 //User make withdrawal
                 case 'C':
