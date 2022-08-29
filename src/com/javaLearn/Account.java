@@ -80,13 +80,12 @@ public class Account{
                     break;
 
                         //User making a deposit
-                        case 'B':
-                            System.out.println("Enter Amount To Deposit ");
-                            int amount = scanner.nextInt();
-                            deposit(amount);
-                            System.out.println();
-
-                            break;
+                case 'B':
+                    System.out.println("Enter Amount To Deposit ");
+                    int amount = scanner.nextInt();
+                    deposit(amount);
+                    System.out.println();
+                    break;
 
                 //User make withdrawal
                 case 'C':
@@ -94,7 +93,6 @@ public class Account{
                     int amount2 = scanner.nextInt();
                     withdraw(amount2);
                     System.out.println();
-
                     break;
 
                 //User User get previous transaction
@@ -102,8 +100,6 @@ public class Account{
                     System.out.println("*".repeat(15));
                     getPreviousTransaction();
                     System.out.println("*".repeat(15));
-
-
                     break;
 
                 //User accrued interest with balance calculation
@@ -112,14 +108,12 @@ public class Account{
                    calculateInterest(years);
                     break;
 
-
                 case 'F':
                     System.out.println("*".repeat(15));
                     break;
 
                 default:
                     System.out.println("ERROR Please Enter A,B,C,D,E,F !!!!!");
-
                     break;
                 }
     }
@@ -127,5 +121,4 @@ public class Account{
 
             System.out.println("Thank You For Banking With Us");
     }
-
 }

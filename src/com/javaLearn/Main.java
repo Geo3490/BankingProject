@@ -7,10 +7,6 @@ public class Main {
         Account george = new Account("George", "A00001");
         Account andrew = new Account("Andrew", "A00002");
 
-
         george.showMenu();
-        george.deposit();
-
-
     }
 }
