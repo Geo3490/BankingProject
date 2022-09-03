@@ -113,7 +113,7 @@ public class Account{
                     break;
 
                 default:
-                    System.out.println("ERROR Please Enter A,B,C,D,E,F !!!!!");
+                    System.out.println("ERROR Please EnterA,B,C,D,E,F !!!!!");
                     break;
                 }
     }
