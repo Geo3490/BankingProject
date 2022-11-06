@@ -1,12 +1,13 @@
 package com.javaLearn;
 
 public class Main {
-
     public static void main(String[] args) {
 
-        Account george = new Account("George", "A00001");
-        Account andrew = new Account("Andrew", "A00002");
+        Car car = new Car("Chevrolet", "Camaro", 2021);
 
-        george.showMenu();
+        //  example of setter to change outcome
+          //  car.setMake("ford");
+
+        System.out.println(car.getMake() + " " + car.getModel());
     }
 }
