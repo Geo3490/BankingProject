@@ -8,6 +8,6 @@ public class Main {
         //  example of setter to change outcome
           //  car.setMake("ford");
 
-        System.out.println(car.getMake() + " " + car.getModel());
+        System.out.println(car.getMake() + " " + car.getModel() + " " + car.getYear());
     }
 }
